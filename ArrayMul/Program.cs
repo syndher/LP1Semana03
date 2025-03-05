@@ -1,8 +1,5 @@
-﻿﻿using System ;
-using System.Net.Http.Headers;
-using System.Numerics;
-
-
+﻿using System;
+using System.Globalization;
 
 namespace ArrayMul
 {
@@ -27,15 +24,22 @@ namespace ArrayMul
             vector[0] = new float [1] {arg5};
             vector[1] = new float [1] {arg6};
 
+            float[] resultado = new float[2];
+
             for (int i = 0; i < matrix.Length; i++)
             {
-                
-                for (int j = 0; j < vector.Length; j++)
-                {
+                float soma = 0;
 
+                for (int j = 0; j < vector.Length; j++)
+                {   
+                    soma += matrix[i][j] * vector[j][0];
                 }
+                resultado[i] = soma;
+                
             }
-            
+
+            Console.WriteLine($"| {resultado[0].ToString("F2", CultureInfo.InvariantCulture)} |".PadLeft(7));
+            Console.WriteLine($"| {resultado[1].ToString("F2", CultureInfo.InvariantCulture)} |".PadLeft(7));
         }
                 
             
