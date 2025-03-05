@@ -21,20 +21,23 @@ namespace RightSize
             string carater = Console.ReadLine();
             char caraterreal = char.Parse(carater);
 
-            string substituto = "x";
-            char charsub = char.Parse(substituto);
-
             string novaresposta = ""; 
 
             foreach (char caraterin in resposta)
             {
+                char x;
                 if (caraterin == caraterreal)
                 {
-                    novaresposta +=  
+                    x = 'x';
                 }
-                    
+                else
+                {
+                    x = caraterin;
+                }
+                novaresposta += x;
+                       
             }
-
+            Console.WriteLine(novaresposta);
 
                 
                         
