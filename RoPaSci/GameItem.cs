@@ -1,9 +1,9 @@
 ﻿using System;
 
-namespace GameItem
+namespace RoPaSci
 {
 
-    public enum Perks
+    public enum GameItem
     {
         Rock,
         Paper,

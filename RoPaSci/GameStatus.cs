@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace GameStatus
+namespace RoPaSci
 {
 
-    public enum RockPaperScissors
+    public enum GameStatus
     {
         Draw,
         Player1Wins,
-        Player2Wins,
+        Player2Wins
     }
 }
