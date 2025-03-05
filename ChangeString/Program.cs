@@ -1,12 +1,7 @@
 ﻿﻿using System ;
-using System.ComponentModel;
-using System.Formats.Asn1;
-using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices;
-using System.Security.Cryptography.X509Certificates;
 
 
-namespace RightSize
+namespace ChangeString
 {
       
     class Program
@@ -35,7 +30,8 @@ namespace RightSize
                     x = caraterin;
                 }
                 novaresposta += x;
-                       
+                
+                    
             }
             Console.WriteLine(novaresposta);
 
