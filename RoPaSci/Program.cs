@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Net;
-using GameItem;
-using GameItems;
-using GameStatus;
+
 
 namespace RoPaSci
 {
@@ -10,16 +8,18 @@ namespace RoPaSci
     {
         private static void Main(string[] args)
         {
-            int result = RockPaperScissors(args[0], args[1]);
+            GameItem item1 = Enum.Parse<GameItem>(args[0]);
+            GameItem item2 = Enum.Parse<GameItem>(args[1]);
+            GameStatus result = RockPaperScissors(item1, item2);
             switch (result)
             {
-                case 0:
+                case GameStatus.Draw:
                     Console.WriteLine("It's a draw!");
                     break;
-                case 1:
+                case GameStatus.Player1Wins:
                     Console.WriteLine("Player 1 wins!");
                     break;
-                case 2:
+                case GameStatus.Player2Wins:
                     Console.WriteLine("Player 2 wins!");
                     break;
             }
