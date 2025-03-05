@@ -2,6 +2,8 @@
 using System.ComponentModel;
 using System.Formats.Asn1;
 using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+using System.Security.Cryptography.X509Certificates;
 
 
 namespace RightSize
@@ -17,10 +19,21 @@ namespace RightSize
 
             Console.WriteLine("Write a character");
             string carater = Console.ReadLine();
+            char caraterreal = char.Parse(carater);
 
             string substituto = "x";
+            char charsub = char.Parse(substituto);
 
-            foreach (char caraterin in resposta);
+            string novaresposta = ""; 
+
+            foreach (char caraterin in resposta)
+            {
+                if (caraterin == caraterreal)
+                {
+                    novaresposta +=  
+                }
+                    
+            }
 
 
                 
