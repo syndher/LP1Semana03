@@ -1,2 +1,36 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿﻿using System ;
+using System.Formats.Asn1;
+
+
+namespace RightSize
+{
+      
+    class Program
+    {
+           
+        static void Main (string[] args)
+            
+        {
+            foreach (string palavra in args) 
+            {
+                if (palavra.Length > 3 & palavra.Length < 8)
+                {
+                    Console.WriteLine(palavra);
+                }
+                else if (palavra.Length >= 8)
+                {
+                    Console.Write("[EARLY STOP]");
+                    break;
+                }
+                        
+            }
+
+                    
+        }
+
+               
+
+
+            
+    }
+}
