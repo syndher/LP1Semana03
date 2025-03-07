@@ -28,8 +28,7 @@ namespace WeaponSelector
         private static Weapons ParseWeapons(string[] args)
         {
             foreach (string weapon in args)
-            {   
-                
+            {       
                 switch (weapon)
                 {
                     case "":
@@ -99,9 +98,7 @@ namespace WeaponSelector
         /// <param name="enemy">The enemy we're trying to kill.</param>
         private static void DisplayResult(EnemyType enemy, bool survives)
         {
-            // ////////// //
-            // CHANGE ME! //
-            // ////////// //
+            Console.WriteLine($"{enemy} {survives}");
         }
     }
 }
