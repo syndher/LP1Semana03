@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Migue\\.nuget\\packages\\": {}
+    "C:\\Users\\Miguel\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Migue\\desktop\\lp1semana03\\RightSize\\RightSize.csproj",
+      "projectUniqueName": "C:\\Users\\Miguel\\desktop\\LpSemana\\LP1Semana03\\RightSize\\RightSize.csproj",
       "projectName": "RightSize",
-      "projectPath": "C:\\Users\\Migue\\desktop\\lp1semana03\\RightSize\\RightSize.csproj",
-      "packagesPath": "C:\\Users\\Migue\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Migue\\desktop\\lp1semana03\\RightSize\\obj\\",
+      "projectPath": "C:\\Users\\Miguel\\desktop\\LpSemana\\LP1Semana03\\RightSize\\RightSize.csproj",
+      "packagesPath": "C:\\Users\\Miguel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Miguel\\desktop\\LpSemana\\LP1Semana03\\RightSize\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Migue\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Miguel\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
