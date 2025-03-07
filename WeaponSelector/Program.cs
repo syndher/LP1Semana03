@@ -31,6 +31,8 @@ namespace WeaponSelector
                 
                 switch (weapon)
                 {
+                    case "":
+                        break;
                     case "SilverBullet":
                         MyWeapon ^= Weapons.SilverBullet;
                         break;
