@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Runtime.InteropServices;
 
 namespace WeaponSelector
 {
@@ -27,21 +28,18 @@ namespace WeaponSelector
         private static Weapons ParseWeapons(string[] args)
         {
             foreach (string weapon in args)
-            {   Weapons MyWeapon = Weapons.None;
+            {   
                 
                 switch (weapon)
                 {
                     case "":
-                        break;
+                        return Weapons.None;
                     case "SilverBullet":
-                        MyWeapon ^= Weapons.SilverBullet;
-                        break;
-                    case "Garlic":
-                        MyWeapon ^= Weapons.Garlic;
-                        break;
+                        return Weapons.SilverBullet;                  
+                    case "Garlic":                       
+                        return Weapons.Garlic;
                     case "HolyWater":
-                        MyWeapon ^= Weapons.HolyWater;
-                        break;
+                        return Weapons.HolyWater;
                 }
             }
 
@@ -55,9 +53,44 @@ namespace WeaponSelector
         /// <returns>Wether the enemy was killed or not.</returns>
         private static bool WeaponsKillEnemy(EnemyType enemy, Weapons weapons)
         {
-            // ////////// //
-            // CHANGE ME! //
-            // ////////// //
+            if (enemy == EnemyType.Vampire)
+            {
+                if (weapons == Weapons.Garlic || weapons == Weapons.HolyWater)
+                {
+                    return true;
+                }
+                else
+                    return false;
+            }
+            if (enemy == EnemyType.Zombie)
+            {
+                if (weapons == Weapons.SilverBullet)
+                {
+                    return true;
+                }
+                else
+                    return false;
+               
+            }
+            if (enemy == EnemyType.Werewolf)
+            {
+               if (weapons == Weapons.SilverBullet)
+                {
+                    return true;
+                }
+                else
+                    return false;
+            }
+            if (enemy == EnemyType.Ghost)
+            {
+               if (weapons == Weapons.HolyWater)
+                {
+                    return true;
+                }
+                else
+                    return false;
+            }
+
         }
 
         /// <summary>
