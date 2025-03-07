@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 
 namespace WeaponSelector
 {
@@ -25,9 +26,23 @@ namespace WeaponSelector
         /// <returns>The weapons.</returns>
         private static Weapons ParseWeapons(string[] args)
         {
-            // ////////// //
-            // CHANGE ME! //
-            // ////////// //
+            foreach (string weapon in args)
+            {   Weapons MyWeapon = Weapons.None;
+                
+                switch (weapon)
+                {
+                    case "SilverBullet":
+                        MyWeapon ^= Weapons.SilverBullet;
+                        break;
+                    case "Garlic":
+                        MyWeapon ^= Weapons.Garlic;
+                        break;
+                    case "HolyWater":
+                        MyWeapon ^= Weapons.HolyWater;
+                        break;
+                }
+            }
+
         }
 
         /// <summary>
